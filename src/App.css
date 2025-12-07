@@ -213,3 +213,112 @@ font-weight: 600;
 from { opacity: 0; transform: translateY(10px); }
 to { opacity: 1; transform: translateY(0); }
 }
+
+/* ============================= */
+/*        RESPONSIVENESS         */
+/* ============================= */
+
+/* --- Phones (max-width: 600px) --- */
+@media (max-width: 600px) {
+
+  /* NAVBAR */
+  nav {
+    height: 65px;
+    gap: 15px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  /* CREATE POST PAGE */
+  .cpContainer {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .cpContainer h1 {
+    font-size: 22px;
+  }
+
+  .inputGp label {
+    font-size: 16px;
+  }
+
+  .inputGp input,
+  .inputGp textarea {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .cpContainer button {
+    font-size: 16px;
+    height: 40px;
+  }
+
+  /* LOGIN PAGE */
+  .loginPage p {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .login-with-google-btn {
+    font-size: 20px;
+    padding: 5px 14px 10px 40px;
+    background-position: 10px 9px;
+  }
+
+  /* HOME PAGE */
+  .post {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .postHeader .title h1 {
+    font-size: 20px;
+  }
+
+  .postHeader .deletePost button {
+    font-size: 24px;
+  }
+
+  .postTextContainer {
+    font-size: 16px;
+    max-height: 300px;
+  }
+}
+
+/* --- Tablets (600px – 900px) --- */
+@media (min-width: 600px) and (max-width: 900px) {
+
+  nav {
+    height: 70px;
+    gap: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .cpContainer {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .post {
+    width: 80%;
+  }
+}
+
+/* --- Large Screens (above 1200px) --- */
+@media (min-width: 1200px) {
+  .post {
+    width: 750px;
+  }
+
+  .cpContainer {
+    width: 600px;
+  }
+}
+
